@@ -1,0 +1,63 @@
+<%- include('header') %>
+<%- include('mobile/homeheader') %>
+<div class="four wide column">
+    <div class="weui_cell" style="">
+
+            <img class="avatar" src="/images/<%= user.avatar %>">
+
+    </div>
+    <%- include('notification') %>
+
+    <div class="weui_grids">
+        <a href="/home" class="weui_grid">
+            <div class="weui_grid_icon">
+
+            </div>
+            <p class="weui_grid_label">
+                首页
+            </p>
+        </a>
+        <a href="/intro" class="weui_grid">
+            <div class="weui_grid_icon">
+                <i class="icon icon_cell"></i>
+            </div>
+            <p class="weui_grid_label">
+                协会简介
+            </p>
+        </a>
+        <a href="#/toast" class="weui_grid">
+            <div class="weui_grid_icon">
+                <i class="icon icon_toast"></i>
+            </div>
+            <p class="weui_grid_label">
+                公告
+            </p>
+        </a>
+        <a href="#/dialog" class="weui_grid">
+            <div class="weui_grid_icon">
+                <i class="icon icon_dialog"></i>
+            </div>
+            <p class="weui_grid_label">
+                行业要闻
+            </p>
+        </a>
+        <a href="/members/usersquery" class="weui_grid">
+            <div class="weui_grid_icon">
+                <i class="icon icon_progress"></i>
+            </div>
+            <p class="weui_grid_label">
+                会员查询
+            </p>
+        </a>
+        <a href="#/msg" class="weui_grid">
+            <div class="weui_grid_icon">
+                <i class="icon icon_msg"></i>
+            </div>
+            <p class="weui_grid_label">
+                政策法规
+            </p>
+        </a>
+
+    </div>
+</div>
+<%- include('footer') %>

@@ -1,0 +1,50 @@
+<%- include('header') %>
+<div class="displayallmembers">
+
+    <div class="weui_cells_title">会员搜索</div>
+
+    <div class="weui_cell">
+
+        <img class="avatar-usersquery" src="/images/icon/timg.jpg">
+
+    </div>
+    <div class="weui_cell">
+        <div class="btn-group">
+            <form class="navbar-form navbar-left" role="search" method="post" action="/members/usersquery/userssearch">
+                <div class="form-group">
+                    <input type="text" name="getName" class="form-control" placeholder="Search">
+                    <input type="submit" value="搜索" class="btn btn-large btn-block btn-primary"></input>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="weui_cell">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped bs-events-table">
+                <thead>
+                <tr>
+                    <th>头像</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>简介</th>
+                </tr>
+                </thead>
+                <% userall.forEach(function (user) { %>
+                <tbody>
+                <tr>
+                    <td><img class="avatar_form" src="/images/<%= user.avatar %>"/></td>
+                    <td><%= user.name %></td>
+                    <td><%= user.gender %></td>
+                    <td><%= user.bio %></td>
+                </tr>
+                </tbody>
+                <% }) %>
+
+            </table>
+        </div>
+    </div>
+
+</div>
+<%- include('footer') %>

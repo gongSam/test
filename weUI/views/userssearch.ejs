@@ -1,0 +1,27 @@
+<%- include('header') %>
+<div class="weui_cells_title">搜索结果</div>
+
+<div class="weui_cell">
+
+    <img class="avatar-usersquery" src="/images/icon/members.gif">
+
+</div>
+<div class="weui_cell">
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped bs-events-table">
+
+            <tbody>
+            <tr>
+                <td><img class="avatar_form" src="/images/<%= usersone.avatar %>"/></td>
+                <td><%= usersone.name %></td>
+                <td><%= usersone.gender %></td>
+                <td><%= usersone.bio %></td>
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+<%- include('footer') %>
